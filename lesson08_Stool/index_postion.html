@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="stool.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="0.88" shadow-softness="0.95" camera-orbit="102.8deg 65.52deg 1.689m" field-of-view="30deg" camera-target="0m 0.3263m 0m" id="stool">
+      
+		
+	  
+	  <button onClick="setOrbit('134.4deg 83.3deg 1.689m', '30deg')">Front</button>
+	  <button onClick="setOrbit('46.67deg 0.0000573deg 1.689m', '30deg')">Top</button>
+	  <button onClick="setOrbit('43.9deg 180deg 1.689m', '30deg')">bottom</button>
+		<button onClick="setOrbit('-38.3deg 109.3deg 0.9157m', '12deg')">screw close up</button>
+
+		
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+	    
+	<script>
+		function setOrbit(orbit, field) {
+	  		document.getElementById('stool').cameraOrbit=orbit;
+			document.getElementById('stool').fieldOfView=field;
+	  	}
+	</script>
+	  
+	  
+  </body>
+</html>
