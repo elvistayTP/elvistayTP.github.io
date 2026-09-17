@@ -6,6 +6,7 @@ Desktop/projector-first playable prototype using the calibrated v5 engine.
 ```bash
 npm install
 npm run dev
+npm run dev -- --host 0.0.0.0 --port 8080
 ```
 
 ## Production build
