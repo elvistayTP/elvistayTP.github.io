@@ -117,7 +117,7 @@ function cardHtml(card, round, selected, disabled) {
 function renderBrief() {
   return `<main>${header()}<section class="heroVisual">
     <div class="heroPhoto"><img src="${VISUAL_BOARD}" alt="Illustrated vision of a greener Singapore 2050"><div class="heroOverlay"></div><div class="heroCopy">
-      <span class="eyebrow light">PEOPLE • CHOICES • SYSTEMS</span><h1>CARBON<br><em>2050 SG</em></h1>
+      <span class="eyebrow light">PEOPLE • CHOICES • SYSTEMS</span><h1>SG CARBON<br><em>2050</em></h1>
       <p>Can we build a <b>2-tonne Singapore?</b><br>The future is in your hands.</p>
       <label>TEAM NAME<input id="teamInput" value="${escapeHtml(state.team)}" maxlength="40"></label>
       <button class="primary bright" data-action="next">Start game ${icon("arrow")}</button>
