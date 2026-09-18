@@ -96,7 +96,7 @@ function budgets(result=calculateFootprint([])) {
 }
 
 function header() {
-  return `<header><div class="brand"><div class="logo">${icon("leaf")}</div><div><b>CARBON 2050 SG</b><small>Singapore Transition Simulator</small></div></div><div class="team">${escapeHtml(state.team)}</div><button class="reset" data-action="reset">${icon("restart","sm")} Restart</button></header>`;
+  return `<header><div class="brand"><div class="logo">${icon("leaf")}</div><div><b>SG CARBON 2050</b><small>Singapore Transition Simulator</small></div></div><div class="team">${escapeHtml(state.team)}</div><button class="reset" data-action="reset">${icon("restart","sm")} Restart</button></header>`;
 }
 
 function cardHtml(card, round, selected, disabled) {
